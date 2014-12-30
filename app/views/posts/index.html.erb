@@ -1,1 +1,15 @@
-No Recent Photos
+<h1>INSTAGRAM</h1>
+<ul>
+  <% if @posts.any? %>
+    <% @posts.each do |post| %>
+      <li>
+          <%= post.title %>
+          <%= image_tag post.image.url(:thumb) %>
+      </li>
+    <% end %>
+</ul>
+  <% else %>
+    No Recent Photos
+<% end %>
+
+<a href="<%=new_post_path%>">Add Photo</a>
