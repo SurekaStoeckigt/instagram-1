@@ -25,10 +25,10 @@ feature 'posts' do
     scenario 'a user can view a post' do
       @post = Post.create(title:'Hello')
       visit '/posts'
-      find('img')
+      click_button 'image_button'
       expect(page).to have_content 'Hello'
       # expect(current_path).to eq "/posts/#{@post.id}"
-      # FIX!
+      # FIX! working in localhost...
     end
 
   end
@@ -39,6 +39,14 @@ feature 'posts' do
       create_post('First Picture!')
     end
 
+    scenario 'a user can edit the title of a post' do
+      visit '/posts'
+      click_link 'Edit'
+      fill_in 'Title', with:'Second attempt'
+      click_button 'Update Post'
+      expect(page).not_to have_content 'First Picture!'
+      expect(page).to have_content 'Second attempt'
+    end
 
   end
   

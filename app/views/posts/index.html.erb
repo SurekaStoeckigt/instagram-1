@@ -3,10 +3,13 @@
   <% if @posts.any? %>
     <% @posts.each do |post| %>
       <li>
-          <%= post.title %>
+        <%= post.title %>
+        <button id="image_button">
           <%= link_to post_path(post) do %>
-            <%= image_tag post.image.url(:thumb) %>
-        <% end %>
+              <%= image_tag post.image.url(:thumb) %>
+          <% end %>
+        </button>
+        <%= link_to "Edit", edit_post_path(post) %>
       </li>
     <% end %>
 </ul>
