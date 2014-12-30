@@ -22,6 +22,15 @@ feature 'posts' do
       expect(page).to have_content "First Picture!"
     end
 
+    scenario 'a user can view a post' do
+      @post = Post.create(title:'Hello')
+      visit '/posts'
+      find('img')
+      expect(page).to have_content 'Hello'
+      # expect(current_path).to eq "/posts/#{@post.id}"
+      # FIX!
+    end
+
   end
 
   context 'posts existing' do
@@ -29,7 +38,6 @@ feature 'posts' do
     before do
       create_post('First Picture!')
     end
-
 
 
   end
