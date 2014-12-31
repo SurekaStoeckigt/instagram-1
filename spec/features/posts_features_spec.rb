@@ -48,6 +48,13 @@ feature 'posts' do
       expect(page).to have_content 'Second attempt'
     end
 
+    scenario 'a user can delete a post' do
+      visit '/posts'
+      click_link 'Delete'
+      expect(page).not_to have_content 'First Picture!'
+      expect(page).to have_content 'Post deleted!'
+    end
+
   end
   
 end

@@ -35,4 +35,11 @@ class PostsController < ApplicationController
     redirect_to '/posts'
   end
 
+  def destroy
+    find_id
+    @post.destroy
+    flash[:notice] = "Post deleted!"
+    redirect_to '/posts'
+  end
+
 end
