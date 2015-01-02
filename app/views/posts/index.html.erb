@@ -1,21 +1,17 @@
-<h1>INSTAGRAM</h1>
+<a href="<%=new_post_path%>">Add Photo</a>
 <ul>
   <% if @posts.any? %>
     <% @posts.each do |post| %>
-      <li>
-        <%= post.title %>
-        <button id="image_button">
+      <thumbnail class="thumbnail">
           <%= link_to post_path(post) do %>
-              <%= image_tag post.image.url(:thumb) %>
+              <%= image_tag post.image.url %>
           <% end %>
-        </button>
+        <%= post.title %>
         <%= link_to "Edit", edit_post_path(post) %>
         <%= link_to "Delete", post_path(post), method: :delete %>
-      </li>
+      </thumbnail>
     <% end %>
 </ul>
   <% else %>
     No Recent Photos
 <% end %>
-
-<a href="<%=new_post_path%>">Add Photo</a>

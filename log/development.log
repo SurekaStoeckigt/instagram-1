@@ -1435,3 +1435,3950 @@ Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-30 15:59:08 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-30 15:59:08 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:36:23 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 134ms (Views: 122.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:36:23 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:36:23 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:36:23 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:36:23 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:36:23 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:36:23 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:36:23 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:36:23 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:36:23 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:36:24 +0000
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2015-01-02 15:36:24 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.1ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.4ms)
+
+
+Started GET "/system/posts/images/000/000/002/thumb/burger.png?1419899900" for 127.0.0.1 at 2015-01-02 15:36:24 +0000
+
+ActionController::RoutingError (No route matches [GET] "/system/posts/images/000/000/002/thumb/burger.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:37:03 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:37:03 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:37:03 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:03 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:37:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:03 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:03 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:03 +0000
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2015-01-02 15:37:03 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.7ms)
+
+
+Started GET "/system/posts/images/000/000/002/thumb/burger.png?1419899900" for 127.0.0.1 at 2015-01-02 15:37:03 +0000
+
+ActionController::RoutingError (No route matches [GET] "/system/posts/images/000/000/002/thumb/burger.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:37:12 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 98ms (Views: 87.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:37:12 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:37:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:12 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:37:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:12 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:12 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:12 +0000
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2015-01-02 15:37:12 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.0ms)
+
+
+Started GET "/system/posts/images/000/000/002/thumb/burger.png?1419899900" for 127.0.0.1 at 2015-01-02 15:37:12 +0000
+
+ActionController::RoutingError (No route matches [GET] "/system/posts/images/000/000/002/thumb/burger.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (13.9ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-01-02 15:37:14 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-01-02 15:37:14 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (14.9ms)
+
+
+Started DELETE "/posts/1" for 127.0.0.1 at 2015-01-02 15:37:18 +0000
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SnR2TZvYs6Ch3antsaoEr7p/CnJDBEaofwHaRESzOtY=", "id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:37:18 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:37:18 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:37:18 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:18 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:18 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:37:18 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:18 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:18 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:18 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:18 +0000
+
+
+Started GET "/system/posts/images/000/000/002/thumb/burger.png?1419899900" for 127.0.0.1 at 2015-01-02 15:37:18 +0000
+
+ActionController::RoutingError (No route matches [GET] "/system/posts/images/000/000/002/thumb/burger.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.3ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2015-01-02 15:37:21 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/system/posts/images/000/000/002/original/burger.png?1419899900" for 127.0.0.1 at 2015-01-02 15:37:21 +0000
+
+ActionController::RoutingError (No route matches [GET] "/system/posts/images/000/000/002/original/burger.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.5ms)
+
+
+Started DELETE "/posts/2" for 127.0.0.1 at 2015-01-02 15:37:24 +0000
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SnR2TZvYs6Ch3antsaoEr7p/CnJDBEaofwHaRESzOtY=", "id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = $1  [["id", 2]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:37:24 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:37:24 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:24 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:37:24 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:37:24 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:24 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:24 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:24 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:24 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:37:24 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-02 15:37:25 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-02 15:47:45 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SnR2TZvYs6Ch3antsaoEr7p/CnJDBEaofwHaRESzOtY=", "post"=>{"title"=>"fjdksm,cds", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fda781d9070 @tempfile=#<Tempfile:/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/RackMultipart20150102-33219-13yu3cl>, @original_filename="burger.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"burger.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33219-y13n7i.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33219-no897d.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33219-no897d.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33219-no897d.png[0]' -auto-orient -resize "300x300>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33219-no897d20150102-33219-wo3w1u'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33219-no897d20150102-33219-wo3w1u'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33219-no897d.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33219-no897d.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33219-no897d.png[0]' -auto-orient -resize "100x100>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33219-no897d20150102-33219-d6ct9z'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33219-no897d20150102-33219-d6ct9z'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33219-4qq43n.png'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2015-01-02 15:47:45.388166"], ["image_content_type", "image/png"], ["image_file_name", "burger.png"], ["image_file_size", 1534539], ["image_updated_at", "2015-01-02 15:47:45.027376"], ["title", "fjdksm,cds"], ["updated_at", "2015-01-02 15:47:45.388166"]]
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 383ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:47:45 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:47:45 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:47:45 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:47:45 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:47:45 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:47:45 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:47:45 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:47:45 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:47:45 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:47:45 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:48:24 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 102ms (Views: 92.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:48:24 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:48:24 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:48:24 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:48:24 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:48:24 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:48:24 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:48:24 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:48:24 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:48:24 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:51:19 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:51:19 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:51:19 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:19 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:51:19 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:19 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:19 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:19 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:19 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:51:28 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:28 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:28 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:51:28 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:51:28 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:28 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:51:28 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:28 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:28 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:28 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:51:51 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:51:51 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:51:51 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:51:51 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:51 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:51 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:51 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:51 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:51 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:51:51 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:52:16 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:52:16 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:52:16 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:52:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:52:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:52:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:52:16 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:52:16 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:52:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:52:16 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:56:53 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:56:53 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:56:53 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:56:53 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:56:53 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:56:53 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:56:53 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:56:53 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:56:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:56:53 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:58:12 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:58:12 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:58:12 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:58:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:58:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:58:12 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:58:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:58:12 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:58:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:58:12 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:59:36 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:59:36 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:59:36 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:36 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:59:36 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:36 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:36 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:36 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:36 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:59:40 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:59:41 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:59:41 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:59:41 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:41 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:41 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:41 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:41 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 15:59:49 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 15:59:49 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 15:59:49 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 15:59:49 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:49 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:49 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:49 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:49 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 15:59:49 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:00:07 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:00:07 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:00:07 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:07 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:00:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:07 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:07 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:07 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:07 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:00:19 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:20 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:00:20 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:00:20 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:20 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:00:20 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:20 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:20 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:20 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:20 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:00:30 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:00:30 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:00:30 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:30 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:30 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:30 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:00:30 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:30 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:30 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:00:36 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:00:36 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:00:36 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:00:36 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:36 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:36 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:36 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:36 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:00:36 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:01:14 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:01:14 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:01:14 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:14 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:14 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:01:14 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:14 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:14 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:14 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:14 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:01:27 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:01:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:27 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:01:27 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:01:27 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:27 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:27 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:01:58 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:01:58 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:58 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:01:58 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:01:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:58 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:58 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:58 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:01:58 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:04:05 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:04:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:04:05 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:04:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:04:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:04:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:04:05 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:04:06 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:04:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:04:06 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:04:21 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:04:22 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:04:22 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:04:22 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:04:22 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:04:22 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:04:22 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:04:22 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:04:22 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:04:22 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:05:13 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:05:13 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:05:13 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:05:13 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:05:13 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:05:13 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:05:13 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:05:13 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:05:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:05:13 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:05:27 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:05:27 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:05:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:05:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:05:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:05:27 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:05:27 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:05:27 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:05:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:05:27 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:07:34 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:07:34 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:07:34 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:07:34 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:07:35 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:07:35 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:07:35 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:07:35 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:07:35 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:07:35 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:07:49 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:07:50 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:07:50 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:07:50 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:07:50 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:07:50 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:07:50 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:07:50 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:07:50 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:07:50 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:09:50 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:09:51 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:09:51 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:09:51 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:09:51 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:09:51 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:09:51 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:09:51 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:09:51 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:09:51 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:09:57 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:09:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:09:57 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:09:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:09:57 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:09:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:09:57 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:09:57 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:09:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:09:57 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:10:04 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 104ms (Views: 93.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:10:04 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:10:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:10:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:10:04 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:10:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:10:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:10:04 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:10:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:10:04 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:10:48 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:10:48 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:10:48 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:10:48 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:10:48 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:10:48 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:10:48 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:10:48 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:10:48 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:10:48 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:13:13 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:13:13 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:13:13 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:13:13 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:13:13 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:13:13 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:13:13 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:13:13 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:13:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:13:13 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:13:27 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:13:27 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:13:27 +0000
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2015-01-02 16:13:27 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:16:57 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 115ms (Views: 104.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:16:57 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:16:57 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:16:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:16:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:16:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:16:57 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:16:57 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:16:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:16:57 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:17:15 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:17:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:17:16 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:17:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:17:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:17:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:17:16 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:17:16 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:17:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:17:16 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:17:44 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:17:44 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:17:44 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:17:44 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:17:44 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:17:44 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:17:44 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:17:44 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:17:44 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:17:44 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:18:44 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:18:44 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:18:44 +0000
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2015-01-02 16:18:44 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:19:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 108ms (Views: 97.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:19:37 +0000
+
+
+Started GET "/stylesheets/bootstrap-theme.css.map.css" for 127.0.0.1 at 2015-01-02 16:19:37 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/bootstrap-theme.css.map.css"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.1ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:19:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:19:37 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:19:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:19:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:19:37 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:19:37 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:19:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:19:37 +0000
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2015-01-02 16:19:37 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:20:59 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stylesheets/bootstrap.css.map.css" for 127.0.0.1 at 2015-01-02 16:20:59 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/bootstrap.css.map.css"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:20:59 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:20:59 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:20:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:20:59 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:20:59 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:20:59 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:20:59 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:20:59 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:20:59 +0000
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2015-01-02 16:20:59 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:21:15 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:21:15 +0000
+
+
+Started GET "/stylesheets/bootstrap.css.map.css" for 127.0.0.1 at 2015-01-02 16:21:15 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/bootstrap.css.map.css"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.3ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:15 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:21:15 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:15 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:15 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:15 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:15 +0000
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2015-01-02 16:21:15 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:21:22 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 98ms (Views: 88.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/stylesheets/bootstrap.css.map.css" for 127.0.0.1 at 2015-01-02 16:21:22 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/bootstrap.css.map.css"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:21:22 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:22 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:21:22 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:22 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:22 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:22 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:22 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:22 +0000
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2015-01-02 16:21:22 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:21:58 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 98ms (Views: 87.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:21:58 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:21:58 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:21:58 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:58 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:58 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:58 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:21:58 +0000
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2015-01-02 16:21:58 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:25:00 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 99ms (Views: 88.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:01 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:01 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:01 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:01 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:01 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:01 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:01 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:01 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:01 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:25:05 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2015-01-02 16:25:06 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered posts/edit.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 53ms (Views: 50.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:25:08 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/posts/3" for 127.0.0.1 at 2015-01-02 16:25:10 +0000
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SnR2TZvYs6Ch3antsaoEr7p/CnJDBEaofwHaRESzOtY=", "id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 3]]
+  [1m[35m (1.0ms)[0m  COMMIT
+[paperclip] deleting /Users/Mishal/Documents/code/makers/Rails/instagram/public/system/posts/images/000/000/003/original/burger.png
+[paperclip] deleting /Users/Mishal/Documents/code/makers/Rails/instagram/public/system/posts/images/000/000/003/medium/burger.png
+[paperclip] deleting /Users/Mishal/Documents/code/makers/Rails/instagram/public/system/posts/images/000/000/003/thumb/burger.png
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 11ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:25:10 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:11 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:11 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:11 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:11 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:11 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:11 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:11 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:11 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:11 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:25:12 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:25:13 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:25:13 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:25:17 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:17 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:17 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:17 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:17 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:17 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:17 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:17 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:25:18 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:25:30 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:30 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:30 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:30 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:30 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:30 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:30 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:30 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:30 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:25:35 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 91ms (Views: 80.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:36 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:36 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:36 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:36 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:36 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:36 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:36 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:36 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:25:37 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:37 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:25:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:37 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:37 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:25:37 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:26:09 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 100ms (Views: 89.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:26:09 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:26:09 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:26:09 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:26:09 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:26:09 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:26:09 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:26:09 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:26:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:26:09 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:26:10 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:26:11 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:26:12 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:26:30 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:26:30 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:26:30 +0000
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2015-01-02 16:26:30 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.7ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:27:10 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:27:10 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:10 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:10 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:10 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:27:10 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:10 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:27:10 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:10 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:10 +0000
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2015-01-02 16:27:10 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (14.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:27:17 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 93ms (Views: 83.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:27:17 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:17 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:27:17 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:17 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:27:17 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:17 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:17 +0000
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2015-01-02 16:27:17 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:27:36 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:27:36 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:27:36 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:27:36 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:36 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:36 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:36 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:36 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:27:36 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:27:51 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:28:11 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:28:11 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:28:11 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:28:11 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:11 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:11 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:11 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:11 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:11 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:11 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:28:16 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 91ms (Views: 80.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:28:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:28:16 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:28:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:16 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:16 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:17 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:28:35 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 94ms (Views: 83.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:28:35 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:28:35 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:35 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:35 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:28:35 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:35 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:35 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:35 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:35 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-02 16:28:45 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 56ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-02 16:28:55 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SnR2TZvYs6Ch3antsaoEr7p/CnJDBEaofwHaRESzOtY=", "post"=>{"title"=>"dhsjcs", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fa135b674b0 @tempfile=#<Tempfile:/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/RackMultipart20150102-33752-1wsxph3>, @original_filename="burger.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"burger.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-1q9rdpl.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-1oef411.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-1oef411.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-1oef411.png[0]' -auto-orient -resize "300x300>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-1oef41120150102-33752-l1a7hz'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-1oef41120150102-33752-l1a7hz'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-1oef411.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-1oef411.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-1oef411.png[0]' -auto-orient -resize "100x100>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-1oef41120150102-33752-rk8hoo'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-1oef41120150102-33752-rk8hoo'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-13dy6up.png'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2015-01-02 16:28:56.350644"], ["image_content_type", "image/png"], ["image_file_name", "burger.png"], ["image_file_size", 1534539], ["image_updated_at", "2015-01-02 16:28:55.984844"], ["title", "dhsjcs"], ["updated_at", "2015-01-02 16:28:56.350644"]]
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 393ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:28:56 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:28:56 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:56 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:28:56 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:28:56 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:56 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:56 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:56 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:28:56 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-02 16:29:02 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-02 16:29:10 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SnR2TZvYs6Ch3antsaoEr7p/CnJDBEaofwHaRESzOtY=", "post"=>{"title"=>"vsfcdsc", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fa135a158c8 @tempfile=#<Tempfile:/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/RackMultipart20150102-33752-1eo4ge2>, @original_filename="burger.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"burger.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-roxgzs.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-196a9b9.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-196a9b9.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-196a9b9.png[0]' -auto-orient -resize "300x300>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-196a9b920150102-33752-1v4d8t7'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-196a9b920150102-33752-1v4d8t7'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-196a9b9.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-196a9b9.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-196a9b9.png[0]' -auto-orient -resize "100x100>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-196a9b920150102-33752-11p5ozu'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-196a9b920150102-33752-11p5ozu'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33752-wl3jsz.png'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2015-01-02 16:29:10.379473"], ["image_content_type", "image/png"], ["image_file_name", "burger.png"], ["image_file_size", 1534539], ["image_updated_at", "2015-01-02 16:29:10.022130"], ["title", "vsfcdsc"], ["updated_at", "2015-01-02 16:29:10.379473"]]
+  [1m[35m (6.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 379ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:29:10 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:29:10 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:29:10 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:29:10 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:29:10 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:29:10 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:29:10 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:29:10 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:29:10 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:29:10 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:29:26 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 99ms (Views: 88.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:29:26 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:29:26 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:29:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:29:26 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:29:26 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:29:26 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:29:26 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:29:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:29:26 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:30:14 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 101ms (Views: 91.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:30:14 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:30:14 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:30:14 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:14 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:14 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:14 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:14 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:14 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:14 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:30:38 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:30:38 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:30:38 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:38 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:38 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:30:38 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:38 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:38 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:38 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:38 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-02 16:30:42 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 45ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-02 16:30:47 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SnR2TZvYs6Ch3antsaoEr7p/CnJDBEaofwHaRESzOtY=", "post"=>{"title"=>""}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-01-02 16:30:47.896335"], ["title", ""], ["updated_at", "2015-01-02 16:30:47.896335"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:30:47 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:47 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:30:47 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:47 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:47 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:30:47 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:30:47 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:47 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:30:47 +0000
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-01-02 16:30:48 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:31:18 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:31:19 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:31:19 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:31:19 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:31:19 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:31:19 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:31:19 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:31:19 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:31:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:31:19 +0000
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-01-02 16:31:19 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:31:42 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 67ms (Views: 66.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:31:42 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:31:42 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:31:42 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:31:42 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:31:42 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:31:42 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:31:42 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:31:42 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:31:42 +0000
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-01-02 16:31:42 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:32:00 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:32:00 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:00 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:00 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:32:01 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:32:01 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:01 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:01 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:01 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:01 +0000
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-01-02 16:32:01 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:32:11 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:32:11 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:32:11 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:32:11 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:11 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:11 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:11 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:11 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:11 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:11 +0000
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-01-02 16:32:11 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:32:44 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:32:44 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:32:44 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:44 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:32:44 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:44 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:44 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:44 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:44 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:44 +0000
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-01-02 16:32:45 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.5ms)
+
+
+Started DELETE "/posts/6" for 127.0.0.1 at 2015-01-02 16:32:49 +0000
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SnR2TZvYs6Ch3antsaoEr7p/CnJDBEaofwHaRESzOtY=", "id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:32:49 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:49 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:49 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:32:49 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:49 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:32:49 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:32:49 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:49 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:32:49 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-02 16:32:57 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-02 16:33:03 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SnR2TZvYs6Ch3antsaoEr7p/CnJDBEaofwHaRESzOtY=", "post"=>{"title"=>"dcss", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fecb2101458 @tempfile=#<Tempfile:/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/RackMultipart20150102-33810-xead5p>, @original_filename="burger.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"burger.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-x2ks9j.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-4rlcmr.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-4rlcmr.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-4rlcmr.png[0]' -auto-orient -resize "300x300>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-4rlcmr20150102-33810-1b86lta'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-4rlcmr20150102-33810-1b86lta'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-4rlcmr.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-4rlcmr.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-4rlcmr.png[0]' -auto-orient -resize "100x100>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-4rlcmr20150102-33810-zqertp'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-4rlcmr20150102-33810-zqertp'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-1ro3e8b.png'
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2015-01-02 16:33:03.978322"], ["image_content_type", "image/png"], ["image_file_name", "burger.png"], ["image_file_size", 1534539], ["image_updated_at", "2015-01-02 16:33:03.634329"], ["title", "dcss"], ["updated_at", "2015-01-02 16:33:03.978322"]]
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 367ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:33:03 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:04 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:04 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:04 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:04 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-02 16:33:09 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-02 16:33:15 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SnR2TZvYs6Ch3antsaoEr7p/CnJDBEaofwHaRESzOtY=", "post"=>{"title"=>"fdvdvdf", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fecb513c988 @tempfile=#<Tempfile:/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/RackMultipart20150102-33810-bjf7af>, @original_filename="burger.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"burger.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-q7r0c8.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-fr3en1.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-fr3en1.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-fr3en1.png[0]' -auto-orient -resize "300x300>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-fr3en120150102-33810-1c14pyp'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-fr3en120150102-33810-1c14pyp'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-fr3en1.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-fr3en1.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-fr3en1.png[0]' -auto-orient -resize "100x100>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-fr3en120150102-33810-1opemp6'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-fr3en120150102-33810-1opemp6'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150102-33810-146qrff.png'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2015-01-02 16:33:16.048559"], ["image_content_type", "image/png"], ["image_file_name", "burger.png"], ["image_file_size", 1534539], ["image_updated_at", "2015-01-02 16:33:15.705539"], ["title", "fdvdvdf"], ["updated_at", "2015-01-02 16:33:16.048559"]]
+  [1m[35m (5.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 366ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:33:16 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:16 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:16 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:16 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:16 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:33:25 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 99ms (Views: 89.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:25 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:25 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:25 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:25 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:25 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:25 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:25 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:25 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:33:31 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:31 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:31 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:31 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:31 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:31 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:33:51 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:51 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:51 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:51 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:51 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:33:51 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:51 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:51 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:51 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:33:51 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 16:34:20 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 16:34:20 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 16:34:20 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 16:34:20 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 16:34:20 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 16:34:20 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:34:20 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 16:34:20 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 16:34:20 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 16:34:20 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 20:42:55 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 179ms (Views: 163.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 20:42:56 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 20:42:56 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 20:42:56 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 20:42:56 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 20:42:56 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 20:42:56 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 20:42:56 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 20:42:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 20:42:56 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 20:43:20 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 20:43:20 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 20:43:20 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 20:43:20 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 20:43:20 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 20:43:20 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 20:43:20 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 20:43:20 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 20:43:20 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 20:43:20 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 20:44:23 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 20:44:23 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 20:44:23 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 20:44:23 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 20:44:23 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 20:44:23 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 20:44:23 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 20:44:23 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 20:44:23 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 20:44:23 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 20:45:11 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 20:45:11 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 20:45:11 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 20:45:11 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:11 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:11 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:11 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:11 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:11 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:11 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-02 20:45:19 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 130ms (Views: 114.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-02 20:45:19 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-02 20:45:19 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:19 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 20:45:19 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:19 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:19 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:19 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:19 +0000
