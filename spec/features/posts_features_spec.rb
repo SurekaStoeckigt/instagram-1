@@ -10,7 +10,7 @@ feature 'posts' do
     end
 
     scenario 'should display there are no posts' do
-      visit '/posts'
+      visit '/'
       expect(page).to have_content 'No Recent Photos'
     end
 
@@ -21,7 +21,7 @@ feature 'posts' do
 
     scenario 'a user can view a post' do
       @post = Post.create(title:'Hello')
-      visit '/posts'
+      visit '/'
       find('.thumbnail_image').click
       expect(page).to have_content 'Hello'
       # expect(current_path).to eq "/posts/#{@post.id}"
@@ -38,7 +38,7 @@ feature 'posts' do
     end
 
     scenario 'a user can edit the title of a post' do
-      visit '/posts'
+      visit '/'
       click_link 'Edit'
       fill_in 'Title', with:'Second attempt'
       click_button 'Update Post'
@@ -47,7 +47,7 @@ feature 'posts' do
     end
 
     scenario 'a user can delete a post' do
-      visit '/posts'
+      visit '/'
       click_link 'Delete'
       expect(page).not_to have_content 'First Picture!'
       expect(page).to have_content 'Post deleted!'
