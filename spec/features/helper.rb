@@ -21,3 +21,8 @@ def add_comment(thoughts)
   click_button 'Send'
 end
 
+def user_leaves_comment
+  sign_up('test@test.com')
+  create_post('First Picture!')
+  add_comment('test')
+end

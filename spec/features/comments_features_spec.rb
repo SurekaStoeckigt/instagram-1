@@ -3,23 +3,17 @@ require_relative 'helper'
 
 feature 'Comments' do
 
-  def user_leaves_comment
-    sign_up('test@test.com')
-    create_post('First Picture!')
-    add_comment('test')
-  end
-
   context 'a user is signed in' do
 
     before do
       user_leaves_comment
     end
 
-    scenario "a user can leave a comment on a post" do
+    scenario "a user can add and view a comment on a post" do
       expect(page).to have_content 'test'
     end
 
-    scenario "a user can leave a comment on a post" do
+    scenario "a user can delete a comment on a post" do
       click_link 'X'
       expect(page).not_to have_content 'test'
       expect(page).to have_content 'Comment deleted successfully'
@@ -37,6 +31,11 @@ feature 'Comments' do
     scenario "a user cannot leave a comment if they are not signed in" do
       visit '/'
       expect(page).not_to have_link 'Comment'
+    end
+
+    scenario "a user cannot delete a comment they didn't create" do
+      sign_up('m@m.com')
+      expect(page).not_to have_link 'X'
     end
 
   end
