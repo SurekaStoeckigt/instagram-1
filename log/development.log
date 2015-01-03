@@ -5382,3 +5382,556 @@ Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:19 +0000
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-02 20:45:19 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:24:13 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 130ms (Views: 118.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:24:13 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:24:13 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:24:13 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:24:13 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:24:13 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:24:13 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:24:13 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:24:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:24:13 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:24:21 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:24:21 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:24:21 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:24:21 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:24:21 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:24:21 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:24:21 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:24:21 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:24:21 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:24:21 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:25:33 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 49ms (Views: 47.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:25:33 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:25:33 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:25:33 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:25:33 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:25:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:25:33 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:25:33 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:25:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:25:33 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:25:52 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:25:52 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:25:52 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:25:53 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:25:53 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:25:53 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:25:53 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:25:53 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:25:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:25:53 +0000
+
+
+Started GET "/posts/4/edit" for 127.0.0.1 at 2015-01-03 10:25:56 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered posts/edit.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 72ms (Views: 69.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/4/edit" for 127.0.0.1 at 2015-01-03 10:26:05 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered posts/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:26:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:26:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:26:05 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:26:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:26:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:26:05 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:26:05 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:26:05 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:26:05 +0000
+
+
+Started GET "/posts/4/edit" for 127.0.0.1 at 2015-01-03 10:26:12 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered posts/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:26:12 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:26:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:26:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:26:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:26:12 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:26:12 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:26:12 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:26:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:26:12 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:26:15 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:27:58 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:27:58 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:27:58 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:27:58 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:27:58 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:27:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:27:58 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:27:58 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:27:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:27:58 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:31:57 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:31:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:31:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:31:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:31:57 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:31:57 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:31:57 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:31:57 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:31:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:31:57 +0000
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2015-01-03 10:32:15 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered posts/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:34:23 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:34:23 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:34:23 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:34:23 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:34:23 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:34:23 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:34:23 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:34:23 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:34:23 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:34:23 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:35:26 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:35:26 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:35:26 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:35:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:35:26 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:35:26 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:35:26 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:35:26 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:35:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:35:26 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-03 10:35:53 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:37:43 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `status' for #<#<Class:0x007fab62949c78>:0x007fab64c758f0>):
+     6:               <%= image_tag post.image.url %>
+     7:           <% end %>
+     8:         <p><%= post.title %></p>
+     9:         <%= link_to post.created_at, status%>
+    10:         <%= link_to "Edit", edit_post_path(post) %> |
+    11:         <%= link_to "Delete", post_path(post), method: :delete, data: {confirm: "Are you sure you want to delete this status?"} %>
+    12:       </thumbnail>
+  app/views/posts/index.html.erb:9:in `block in _app_views_posts_index_html_erb___3051859625663764943_70187053449120'
+  app/views/posts/index.html.erb:3:in `_app_views_posts_index_html_erb___3051859625663764943_70187053449120'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:38:02 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:38:02 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:38:02 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:38:02 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:38:02 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:38:02 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:38:02 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:38:02 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:38:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:38:02 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:38:42 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:38:42 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:38:42 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:38:42 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:38:42 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:38:42 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:38:42 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:38:42 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:38:42 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:38:42 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:39:22 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:39:23 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:39:23 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:39:23 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:39:23 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:39:23 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:39:23 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:39:23 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:39:23 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:39:23 +0000
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-03 10:39:38 +0000
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 10:39:39 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-03 10:39:39 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 10:39:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 10:39:39 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 10:39:39 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 10:39:39 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 10:39:39 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 10:39:39 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 10:39:39 +0000
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2015-01-03 10:39:41 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.2ms)

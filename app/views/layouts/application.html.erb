@@ -7,9 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <!-- <navbar class="navbar navbar-default navbar-fixed-top"> -->
-  <navbar class="navbar navbar-default">
-    <header class="header">Instagram</header>
+  <navbar class="navbar navbar-default navbar-fixed-top">
+  <!-- <navbar class="navbar navbar-default"> -->
+    <a href="posts" class="header">Instagram</a>
+    <a href="<%=new_post_path%>">Add Photo</a>
   </navbar>
 
   <mainbody>

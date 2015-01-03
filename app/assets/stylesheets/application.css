@@ -21,3 +21,7 @@
 .header {
   font-size: 40px;
 }
+
+body {
+  padding-top: 80px;
+}
