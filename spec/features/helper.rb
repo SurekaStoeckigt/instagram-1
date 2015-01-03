@@ -20,3 +20,4 @@ def add_comment(thoughts)
   fill_in 'Thoughts', with: thoughts
   click_button 'Send'
 end
+
