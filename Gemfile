@@ -22,6 +22,8 @@ gem 'spring',        group: :development
 
 gem 'paperclip'
 
+gem 'devise'
+
 group :test do
   gem 'rspec-rails'
   gem 'capybara'

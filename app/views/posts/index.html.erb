@@ -2,9 +2,11 @@
   <% if @posts.any? %>
     <% @posts.each do |post| %>
       <thumbnail class="thumbnail">
+        <picture class="thumbnail_image">
           <%= link_to post_path(post) do %>
               <%= image_tag post.image.url %>
           <% end %>
+        </picture>
         <p><%= post.title %></p>
         <%= link_to time_ago_in_words(post.created_at) + " ago", post%> |
         <%= link_to "Edit", edit_post_path(post) %> |

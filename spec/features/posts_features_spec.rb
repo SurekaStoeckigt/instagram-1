@@ -25,7 +25,7 @@ feature 'posts' do
     scenario 'a user can view a post' do
       @post = Post.create(title:'Hello')
       visit '/posts'
-      click_button 'image_button'
+      find('.thumbnail_image').click
       expect(page).to have_content 'Hello'
       # expect(current_path).to eq "/posts/#{@post.id}"
       # FIX! working in localhost...
