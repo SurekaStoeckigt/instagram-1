@@ -7,10 +7,16 @@ def sign_up(email)
   click_button 'Sign up'
 end
 
-  def create_post(title)
-    visit '/'
-    click_link 'Add Photo'
-    fill_in 'Title', with: title
-    attach_file "Image", File.join(Rails.root, '/spec/features/burger.png')
-    click_button "Create Post"
-  end
+def create_post(title)
+  visit '/'
+  click_link 'Add Photo'
+  fill_in 'Title', with: title
+  attach_file "Image", File.join(Rails.root, '/spec/features/burger.png')
+  click_button "Create Post"
+end
+
+def add_comment(thoughts)
+  click_link 'Comment'
+  fill_in 'Thoughts', with: thoughts
+  click_button 'Send'
+end

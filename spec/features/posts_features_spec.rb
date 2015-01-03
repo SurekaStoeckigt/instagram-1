@@ -1,7 +1,7 @@
 require 'rails_helper'
 require_relative 'helper'
 
-feature 'posts' do
+feature 'Posts' do
 
   context 'no posts added' do
 
