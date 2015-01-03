@@ -9,8 +9,8 @@
 <body>
   <navbar class="navbar navbar-default navbar-fixed-top">
     <a href="/" class="header">Instagram</a>
-    <a href="<%=new_post_path%>">Add Photo</a>
     <% if user_signed_in? %>
+      <a href="<%=new_post_path%>">Add Photo</a>
       <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
     <% else %>
       <%= link_to "Sign in", new_user_session_path %>

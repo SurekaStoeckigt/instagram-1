@@ -1,5 +1,14 @@
 class PostsController < ApplicationController
 
+  before_action :authenticate_user!, :except => [:index, :show]
+  before_action :require_permission, :only => [:edit, :delete]
+
+  def require_permission
+    if current_user != Post.find(params[:id]).user
+    redirect_to '/'
+  end
+  end
+
   def post_params
     params.require(:post).permit(:title, :image)
   end
@@ -10,6 +19,11 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+    if user_signed_in?
+      @user_id = current_user.id
+    else
+      @user_id = nil
+    end
   end
 
   def new
@@ -17,8 +31,13 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
-    redirect_to '/posts'
+    @post = Post.create(post_params)
+    @post.user_id = current_user.id
+    if @post.save
+      redirect_to '/'
+    else
+      flash[:notice] = "You cannot add a photo if you are not logged in"
+    end
   end
 
   def show
@@ -32,14 +51,14 @@ class PostsController < ApplicationController
   def update
     find_id
     @post.update(post_params)
-    redirect_to '/posts'
+    redirect_to '/'
   end
 
   def destroy
     find_id
     @post.destroy
+    redirect_to '/'
     flash[:notice] = "Post deleted!"
-    redirect_to '/posts'
   end
 
 end

@@ -1,19 +1,38 @@
-<ul>
   <% if @posts.any? %>
+
+    <ul>
+
     <% @posts.each do |post| %>
+
       <thumbnail class="thumbnail">
+
         <picture class="thumbnail_image">
+
           <%= link_to post_path(post) do %>
               <%= image_tag post.image.url %>
           <% end %>
+
         </picture>
+
         <p><%= post.title %></p>
+
         <%= link_to time_ago_in_words(post.created_at) + " ago", post%> |
-        <%= link_to "Edit", edit_post_path(post) %> |
-        <%= link_to "Delete", post_path(post), method: :delete, data: {confirm: "Are you sure you want to delete this status?"} %>
+
+        <% if @user_id == post.user_id %>
+
+          <%= link_to "Edit", edit_post_path(post) %> |
+          <%= link_to "Delete", post_path(post), method: :delete, data: {confirm: "Are you sure you want to delete this status?"} %>
+
+        <% end %>
+
       </thumbnail>
+
     <% end %>
-</ul>
+
+    </ul>
+
   <% else %>
+
     No Recent Photos
+
 <% end %>

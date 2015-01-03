@@ -1,16 +1,13 @@
 require 'rails_helper'
+require_relative 'helper'
 
 feature 'posts' do
 
-  def create_post(title)
-    visit '/posts'
-    click_link 'Add Photo'
-    fill_in 'Title', with: title
-    attach_file "Image", File.join(Rails.root, '/spec/features/burger.png')
-    click_button "Create Post"
-  end
-
   context 'no posts added' do
+
+    before do
+      sign_up('test@test.com')
+    end
 
     scenario 'should display there are no posts' do
       visit '/posts'
@@ -36,6 +33,7 @@ feature 'posts' do
   context 'posts existing' do
 
     before do
+      sign_up('test@test.com')
       create_post('First Picture!')
     end
 

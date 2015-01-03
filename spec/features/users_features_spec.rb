@@ -21,9 +21,16 @@ feature 'users' do
       expect(page).to have_content 'Welcome! You have signed up successfully'
     end
 
+    scenario 'a user cannot add a photo if they are not logged in' do
+      visit '/posts/new'
+      expect 'You need to sign in or sign up before continuing'
+      expect(page).not_to have_link 'Add Photo'
+    end
+
   end
 
   context 'a user is logged in' do
+
     before do
       sign_up('test@test.com')
     end
@@ -37,6 +44,27 @@ feature 'users' do
       visit '/'
       expect(page).not_to have_link 'Sign in'
       expect(page).not_to have_link 'Sign up'
+    end
+
+  end
+
+  context 'setting limits on users' do
+
+    before do
+      sign_up('1@1.com')
+      @post = Post.create(title:'Hello')
+      click_link 'Sign out'
+      sign_up('m@m.com')
+    end
+
+    scenario "a user cannot edit a post they haven't created" do
+      expect(page).not_to have_link 'Edit'
+      visit "/posts/#{@post.id}/edit"
+      expect(current_path).to eq "/"
+    end
+
+    scenario "a user cannot delete a post they didn't create" do
+      expect(page).not_to have_link 'Delete'
     end
 
   end
