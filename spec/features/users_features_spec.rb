@@ -1,5 +1,5 @@
 require 'rails_helper'
-require_relative './helper'
+require_relative 'helper'
 
 feature 'users' do
 
