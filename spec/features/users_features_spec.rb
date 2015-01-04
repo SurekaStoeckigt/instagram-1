@@ -52,7 +52,7 @@ feature 'users' do
 
     before do
       sign_up('mishal','test@test.com')
-      @post = Post.create(title:'Hello')
+      @post = Post.create(title:'Hello', user_id:2)
       click_link 'Sign out'
       sign_up('mishal','m@m.com')
     end

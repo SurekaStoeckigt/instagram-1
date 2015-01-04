@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  resources :users
+  
   resources :posts, shallow: true do
     resources :comments, :likes
   end

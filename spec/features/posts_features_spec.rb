@@ -20,7 +20,7 @@ feature 'Posts' do
     end
 
     scenario 'a user can view a post' do
-      @post = Post.create(title:'Hello')
+      @post = Post.create(title:'Hello', user_id:1)
       visit '/'
       find('.thumbnail_image').click
       expect(page).to have_content 'Hello'
