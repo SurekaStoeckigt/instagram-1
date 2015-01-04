@@ -4,7 +4,7 @@ require_relative 'helper'
 feature 'likes' do
 
   before do
-    sign_up('test@test.com')
+    sign_up('mishal','test@test.com')
     create_post('hello')
   end
 

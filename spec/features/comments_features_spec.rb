@@ -34,7 +34,7 @@ feature 'Comments' do
     end
 
     scenario "a user cannot delete a comment they didn't create" do
-      sign_up('m@m.com')
+      sign_up('mishal','m@m.com')
       expect(page).not_to have_link 'X'
     end
 

@@ -6,7 +6,7 @@ feature 'Posts' do
   context 'no posts added' do
 
     before do
-      sign_up('test@test.com')
+      sign_up('mishal','test@test.com')
     end
 
     scenario 'should display there are no posts' do
@@ -33,7 +33,7 @@ feature 'Posts' do
   context 'posts existing' do
 
     before do
-      sign_up('test@test.com')
+      sign_up('mishal','test@test.com')
       create_post('First Picture!')
     end
 
@@ -51,6 +51,11 @@ feature 'Posts' do
       click_link 'Delete'
       expect(page).not_to have_content 'First Picture!'
       expect(page).to have_content 'Post deleted!'
+    end
+
+    scenario "a user's name should be displayed in a post" do
+      visit '/'
+      expect(page).to have_content 'Mishal Islam'
     end
 
   end

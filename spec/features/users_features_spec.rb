@@ -17,7 +17,7 @@ feature 'users' do
     end
 
     scenario 'they should be able to sign up' do
-      sign_up('test@test.com')
+      sign_up('mishal','test@test.com')
       expect(page).to have_content 'Welcome! You have signed up successfully'
     end
 
@@ -32,7 +32,7 @@ feature 'users' do
   context 'a user is logged in' do
 
     before do
-      sign_up('test@test.com')
+      sign_up('mishal','test@test.com')
     end
 
     scenario 'they should see a sign out link' do
@@ -51,10 +51,10 @@ feature 'users' do
   context 'setting limits on users' do
 
     before do
-      sign_up('1@1.com')
+      sign_up('mishal','test@test.com')
       @post = Post.create(title:'Hello')
       click_link 'Sign out'
-      sign_up('m@m.com')
+      sign_up('mishal','m@m.com')
     end
 
     scenario "a user cannot edit a post they haven't created" do
