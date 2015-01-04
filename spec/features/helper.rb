@@ -13,6 +13,7 @@ end
 def create_post(title)
   visit '/'
   click_link 'Add Photo'
+  fill_in 'Name', with:'Mishal Islam'
   fill_in 'Title', with: title
   attach_file "Image", File.join(Rails.root, '/spec/features/burger.png')
   click_button "Create Post"

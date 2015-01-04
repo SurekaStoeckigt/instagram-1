@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:title, :image)
+    params.require(:post).permit(:title, :image, :name)
   end
 
   def find_id
@@ -28,6 +28,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @user = User.find(current_user.id)
   end
 
   def create
