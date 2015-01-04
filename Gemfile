@@ -24,6 +24,10 @@ gem 'paperclip'
 
 gem 'devise'
 
+gem 'poltergeist'
+
+gem 'database_cleaner'
+
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
