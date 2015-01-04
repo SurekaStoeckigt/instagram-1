@@ -1,5 +1,7 @@
 <%= form_for [@post, @comment] do |f| %>
   <%= f.hidden_field :user_id, :value => current_user.id %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
   <%= f.label :thoughts %>
   <%= f.text_area :thoughts %>
   <%= f.submit 'Send'%>

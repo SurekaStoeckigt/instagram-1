@@ -22,6 +22,7 @@ end
 def add_comment(thoughts)
   click_link 'Comment'
   fill_in 'Thoughts', with: thoughts
+  fill_in 'Name', with: 'Name'
   click_button 'Send'
 end
 

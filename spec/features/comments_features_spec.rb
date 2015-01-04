@@ -19,6 +19,11 @@ feature 'Comments' do
       expect(page).to have_content 'Comment deleted successfully'
     end
 
+    scenario "a user's name should be displayed in a comment" do
+      visit '/'
+      expect(page).to have_content 'Name'
+    end
+    
   end
 
   context 'another user creates a comment' do
@@ -37,6 +42,7 @@ feature 'Comments' do
       sign_up('mishal','m@m.com')
       expect(page).not_to have_link 'X'
     end
+
 
   end
   
