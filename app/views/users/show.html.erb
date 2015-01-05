@@ -1,1 +1,10 @@
-<h1> <%= @user.email %> </h1>
+<h1> <%= @user.email %><br> 
+<%= @posts.count %> Posts</h1>
+
+<% if @posts %>
+  <% @posts.reverse.each do |post| %>
+  <thumbnail class="image">
+    <%= image_tag post.image.url%>
+  </thumbnail>
+  <% end %>
+<% end %>
