@@ -23,5 +23,18 @@
 }
 
 body {
-  padding-top: 80px;
+  padding-top: 10px;
+}
+
+.grid_photo {
+  height: 200px;
+  width: 200px;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
 }

@@ -3,8 +3,6 @@
 
 <% if @posts %>
   <% @posts.reverse.each do |post| %>
-  <thumbnail class="image">
-    <%= image_tag post.image.url%>
-  </thumbnail>
+    <%= image_tag post.image.url, class: "grid_photo"%>
   <% end %>
 <% end %>
