@@ -24941,3 +24941,17 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 00:29:47 +0000
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 00:29:47 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 09:39:40 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (6.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (18.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 8]]
+  [1m[35mComment Exists (0.3ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 8]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 7]]
+  [1m[35mComment Exists (0.1ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 7]]
+  Rendered posts/index.html.erb within layouts/application (61.9ms)
+Completed 200 OK in 263ms (Views: 200.4ms | ActiveRecord: 31.8ms)

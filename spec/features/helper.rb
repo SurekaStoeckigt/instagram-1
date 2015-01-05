@@ -19,15 +19,15 @@ def create_post(title)
   click_button "Create Post"
 end
 
-def add_comment(thoughts)
+def add_comment(thoughts, name)
   click_link 'Comment'
   fill_in 'Thoughts', with: thoughts
-  fill_in 'Name', with: 'Name'
+  fill_in 'Name', with: name
   click_button 'Send'
 end
 
 def user_leaves_comment
   sign_up('mishal','test@test.com')
   create_post('First Picture!')
-  add_comment('test')
+  add_comment('test', 'MISHAL')
 end

@@ -21,7 +21,7 @@ feature 'Comments' do
 
     scenario "a user's name should be displayed in a comment" do
       visit '/'
-      expect(page).to have_content 'Name'
+      expect(page).to have_content 'MISHAL'
     end
     
   end
