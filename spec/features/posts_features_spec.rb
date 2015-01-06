@@ -33,7 +33,7 @@ feature 'Posts' do
   context 'posts existing' do
 
     before do
-      sign_up('mishal','test@test.com')
+      sign_up('Mishal','test@test.com')
       create_post('First Picture!')
     end
 
@@ -55,7 +55,7 @@ feature 'Posts' do
 
     scenario "a user's name should be displayed in a post" do
       visit '/'
-      expect(page).to have_content 'Mishal Islam'
+      expect(page).to have_content 'Mishal'
     end
 
   end

@@ -1,7 +1,5 @@
 <%= form_for @post, html: {multipart: true} do |f| %>
-  <!-- <%= f.hidden_field :name, :value => @user.profile_name %> -->
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.hidden_field :name, :value => @user.first_name %>
   <%= f.label :title %>
   <%= f.text_field :title %>
   <%= f.label :image %>

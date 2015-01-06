@@ -28,6 +28,8 @@ gem 'poltergeist'
 
 gem 'database_cleaner'
 
+gem 'aws-sdk'
+
 group :test do
   gem 'rspec-rails'
   gem 'capybara'

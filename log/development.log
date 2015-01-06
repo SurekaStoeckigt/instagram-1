@@ -24955,3 +24955,3658 @@ Processing by PostsController#index as HTML
   [1m[35mComment Exists (0.1ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 7]]
   Rendered posts/index.html.erb within layouts/application (61.9ms)
 Completed 200 OK in 263ms (Views: 200.4ms | ActiveRecord: 31.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 126ms (Views: 103.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 16:54:50 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-05 16:54:56 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 96ms (Views: 93.0ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VpptOQj0Q1JoAqZGp4i/ltNwXvq+Ed/MBchDSC0krxg=", "user"=>{"first_name"=>"1", "last_name"=>"1", "profile_name"=>"1", "email"=>"1@1.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: first_name, last_name, profile_name
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = '1@1.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 150ms (Views: 66.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:08 +0000
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VpptOQj0Q1JoAqZGp4i/ltNwXvq+Ed/MBchDSC0krxg=", "user"=>{"first_name"=>"1", "last_name"=>"1", "profile_name"=>"1", "email"=>"m@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: first_name, last_name, profile_name
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'm@m.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2015-01-05 16:55:47.464930"], ["email", "m@m.com"], ["encrypted_password", "$2a$10$sPERq7p.xBnU.EzrDH5bNONP2w0y48uJVUfoxgnRp4i9ZtKeenRW6"], ["updated_at", "2015-01-05 16:55:47.464930"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 12[0m  [["current_sign_in_at", "2015-01-05 16:55:47.468909"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2015-01-05 16:55:47.468909"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-01-05 16:55:47.469817"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 77ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 12  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 70ms (Views: 65.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:47 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-05 16:55:49 +0000
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 12  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 12]]
+  Rendered posts/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 72ms (Views: 69.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-05 16:55:57 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VpptOQj0Q1JoAqZGp4i/ltNwXvq+Ed/MBchDSC0krxg=", "post"=>{"name"=>"Mishal", "title"=>"fenrsm", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fd76459f540 @tempfile=#<Tempfile:/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/RackMultipart20150105-1791-1b8gy79>, @original_filename="burger.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"burger.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 12  ORDER BY "users"."id" ASC LIMIT 1[0m
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-1791-4fem7g.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-1791-k1t9lz.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-1791-k1t9lz.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-1791-k1t9lz.png[0]' -auto-orient -resize "300x300>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-1791-k1t9lz20150105-1791-1iox7j3'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-1791-k1t9lz20150105-1791-1iox7j3'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-1791-k1t9lz.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-1791-k1t9lz.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-1791-k1t9lz.png[0]' -auto-orient -resize "100x100>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-1791-k1t9lz20150105-1791-ykqe92'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-1791-k1t9lz20150105-1791-ykqe92'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-1791-10xfkmd.png'
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "posts" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "name", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2015-01-05 16:55:57.914749"], ["image_content_type", "image/png"], ["image_file_name", "burger.png"], ["image_file_size", 1534539], ["image_updated_at", "2015-01-05 16:55:57.552304"], ["name", "Mishal"], ["title", "fenrsm"], ["updated_at", "2015-01-05 16:55:57.914749"]]
+  [1m[35m (6.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "posts" SET "updated_at" = $1, "user_id" = $2 WHERE "posts"."id" = 15  [["updated_at", "2015-01-05 16:55:57.936248"], ["user_id", 12]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 400ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 16:55:57 +0000
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 12  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 15]]
+  [1m[35mComment Exists (0.6ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 15]]
+  Rendered posts/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 95ms (Views: 89.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 16:55:58 +0000
+
+
+Started GET "/users/12" for 127.0.0.1 at 2015-01-05 16:55:59 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"  WHERE "posts"."user_id" = 12
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = 12[0m
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 12  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 62ms (Views: 59.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/12" for 127.0.0.1 at 2015-01-05 16:58:28 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 12]]
+Completed 404 Not Found in 13ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=12):
+  app/controllers/users_controller.rb:4:in `show'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 16:58:31 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 12  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 125ms (Views: 108.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 16:58:31 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 12  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 16:58:32 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 133ms (Views: 114.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:10 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-05 17:57:13 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 86ms (Views: 82.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VpptOQj0Q1JoAqZGp4i/ltNwXvq+Ed/MBchDSC0krxg=", "user"=>{"first_name"=>"mishal", "last_name"=>"islam", "profile_name"=>"mishal", "email"=>"1@1.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: first_name, last_name, profile_name
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = '1@1.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2015-01-05 17:57:29.794230"], ["email", "1@1.com"], ["encrypted_password", "$2a$10$0oqgu4e7Dsb9IM0VLMvuoOwFk1UR5JIfGxOCGXuaLkOITKOcF1vVu"], ["updated_at", "2015-01-05 17:57:29.794230"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 13  [["current_sign_in_at", "2015-01-05 17:57:29.798499"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2015-01-05 17:57:29.798499"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-01-05 17:57:29.799411"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 84ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 58ms (Views: 53.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 17:57:29 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-05 17:57:32 +0000
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered posts/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 68ms (Views: 64.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-05 17:57:39 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VpptOQj0Q1JoAqZGp4i/ltNwXvq+Ed/MBchDSC0krxg=", "post"=>{"name"=>"Mishal", "title"=>"fem,ds", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fa6c34bf958 @tempfile=#<Tempfile:/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/RackMultipart20150105-2613-5cj83b>, @original_filename="burger.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"burger.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-2613-mjqnby.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-2613-19g8cks.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-2613-19g8cks.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-2613-19g8cks.png[0]' -auto-orient -resize "300x300>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-2613-19g8cks20150105-2613-vg8sid'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-2613-19g8cks20150105-2613-vg8sid'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-2613-19g8cks.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-2613-19g8cks.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-2613-19g8cks.png[0]' -auto-orient -resize "100x100>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-2613-19g8cks20150105-2613-r05o2f'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-2613-19g8cks20150105-2613-r05o2f'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-2613-10miunb.png'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "name", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", "2015-01-05 17:57:40.144909"], ["image_content_type", "image/png"], ["image_file_name", "burger.png"], ["image_file_size", 1534539], ["image_updated_at", "2015-01-05 17:57:39.780160"], ["name", "Mishal"], ["title", "fem,ds"], ["updated_at", "2015-01-05 17:57:40.144909"]]
+[paperclip] saving /posts/images/000/000/016/original/burger.png
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 548ms
+
+ArgumentError (missing required :bucket option):
+  app/controllers/posts_controller.rb:35:in `create'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.3ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 174ms (Views: 144.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 18:39:06 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-05 18:39:08 +0000
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered posts/new.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 95ms (Views: 85.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-05 18:39:15 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VpptOQj0Q1JoAqZGp4i/ltNwXvq+Ed/MBchDSC0krxg=", "post"=>{"name"=>"rfejn", "title"=>"dfnm", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fad3b0eec10 @tempfile=#<Tempfile:/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/RackMultipart20150105-3401-fl8awr>, @original_filename="burger.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"burger.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-3401-wi0tgs.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-3401-122lges.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-3401-122lges.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-3401-122lges.png[0]' -auto-orient -resize "300x300>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-3401-122lges20150105-3401-w89fr2'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-3401-122lges20150105-3401-w89fr2'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-3401-122lges.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-3401-122lges.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-3401-122lges.png[0]' -auto-orient -resize "100x100>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-3401-122lges20150105-3401-mx61cb'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-3401-122lges20150105-3401-mx61cb'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-3401-dhp4qi.png'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "name", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", "2015-01-05 18:39:15.835112"], ["image_content_type", "image/png"], ["image_file_name", "burger.png"], ["image_file_size", 1534539], ["image_updated_at", "2015-01-05 18:39:15.425982"], ["name", "rfejn"], ["title", "dfnm"], ["updated_at", "2015-01-05 18:39:15.835112"]]
+[paperclip] saving /posts/images/000/000/017/original/burger.png
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 606ms
+
+ArgumentError (missing required :bucket option):
+  app/controllers/posts_controller.rb:35:in `create'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 131ms (Views: 101.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 18:48:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 18:48:28 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-05 18:48:29 +0000
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered posts/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 142ms (Views: 132.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-05 18:48:48 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VpptOQj0Q1JoAqZGp4i/ltNwXvq+Ed/MBchDSC0krxg=", "post"=>{"name"=>"rgre", "title"=>"gdrfg", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb450cdec20 @tempfile=#<Tempfile:/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/RackMultipart20150105-4067-187uopp>, @original_filename="burger.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"burger.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-xqa235.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-x2v8c9.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-x2v8c9.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-x2v8c9.png[0]' -auto-orient -resize "300x300>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-x2v8c920150105-4067-1m4sfon'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-x2v8c920150105-4067-1m4sfon'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-x2v8c9.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-x2v8c9.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-x2v8c9.png[0]' -auto-orient -resize "100x100>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-x2v8c920150105-4067-13axnh1'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-x2v8c920150105-4067-13axnh1'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-1nn47rw.png'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "name", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", "2015-01-05 18:48:48.685986"], ["image_content_type", "image/png"], ["image_file_name", "burger.png"], ["image_file_size", 1534539], ["image_updated_at", "2015-01-05 18:48:48.321682"], ["name", "rgre"], ["title", "gdrfg"], ["updated_at", "2015-01-05 18:48:48.685986"]]
+[paperclip] saving /posts/images/000/000/018/original/burger.png
+[AWS S3 200 24.780687 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>1534539,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: burger.png,:key=>"posts/images/000/000/018/original/burger.png")  
+
+[paperclip] saving /posts/images/000/000/018/medium/burger.png
+[AWS S3 200 3.184188 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>146722,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 6e69685d22c94ffd42ccd7e70e246bd920150105-4067-x2v8c920150105-4067-1m4sfon,:key=>"posts/images/000/000/018/medium/burger.png")  
+
+[paperclip] saving /posts/images/000/000/018/thumb/burger.png
+[AWS S3 200 0.356953 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>22780,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 6e69685d22c94ffd42ccd7e70e246bd920150105-4067-x2v8c920150105-4067-13axnh1,:key=>"posts/images/000/000/018/thumb/burger.png")  
+
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "posts" SET "updated_at" = $1, "user_id" = $2 WHERE "posts"."id" = 18[0m  [["updated_at", "2015-01-05 18:49:17.176874"], ["user_id", 13]]
+  [1m[35m (6.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 28872ms (ActiveRecord: 14.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-05 18:49:17 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VpptOQj0Q1JoAqZGp4i/ltNwXvq+Ed/MBchDSC0krxg=", "post"=>{"name"=>"rgre", "title"=>"gdrfg", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb45148f460 @tempfile=#<Tempfile:/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/RackMultipart20150105-4067-yhfjwg>, @original_filename="burger.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"burger.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1[0m
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-l3rv8i.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-zn66ql.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-zn66ql.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-zn66ql.png[0]' -auto-orient -resize "300x300>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-zn66ql20150105-4067-97j0m'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-zn66ql20150105-4067-97j0m'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-zn66ql.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-zn66ql.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-zn66ql.png[0]' -auto-orient -resize "100x100>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-zn66ql20150105-4067-1l0r8sf'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-zn66ql20150105-4067-1l0r8sf'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150105-4067-22ponl.png'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "name", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2015-01-05 18:49:17.559892"], ["image_content_type", "image/png"], ["image_file_name", "burger.png"], ["image_file_size", 1534539], ["image_updated_at", "2015-01-05 18:49:17.211868"], ["name", "rgre"], ["title", "gdrfg"], ["updated_at", "2015-01-05 18:49:17.559892"]]
+[paperclip] saving /posts/images/000/000/019/original/burger.png
+[AWS S3 200 22.114646 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>1534539,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: burger.png,:key=>"posts/images/000/000/019/original/burger.png")  
+
+[paperclip] saving /posts/images/000/000/019/medium/burger.png
+[AWS S3 200 2.156114 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>146722,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 6e69685d22c94ffd42ccd7e70e246bd920150105-4067-zn66ql20150105-4067-97j0m,:key=>"posts/images/000/000/019/medium/burger.png")  
+
+[paperclip] saving /posts/images/000/000/019/thumb/burger.png
+[AWS S3 200 0.524123 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>22780,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 6e69685d22c94ffd42ccd7e70e246bd920150105-4067-zn66ql20150105-4067-1l0r8sf,:key=>"posts/images/000/000/019/thumb/burger.png")  
+
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "posts" SET "updated_at" = $1, "user_id" = $2 WHERE "posts"."id" = 19  [["updated_at", "2015-01-05 18:49:42.365467"], ["user_id", 13]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 25172ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 19]]
+  [1m[35mComment Exists (0.5ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 19]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 18]]
+  [1m[35mComment Exists (0.1ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (48.8ms)
+Completed 200 OK in 193ms (Views: 185.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:42 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1  [["post_id", 19]]
+  [1m[36mComment Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1[0m  [["post_id", 19]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1  [["post_id", 18]]
+  [1m[36mComment Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1[0m  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 117ms (Views: 112.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 18:49:52 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 18:54:30 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 18:54:30 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 18:54:30 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 18:54:30 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 18:54:30 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 18:54:30 +0000
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2015-01-05 18:54:30 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.0ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.6ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 19:01:32 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 19]]
+  [1m[35mComment Exists (0.3ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 19]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 18]]
+  [1m[35mComment Exists (0.2ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (52.6ms)
+Completed 200 OK in 185ms (Views: 151.3ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2015-01-05 19:01:33 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.9ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.1ms)
+  Rendered /Users/Mishal/.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 19:29:55 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 19]]
+  [1m[35mComment Exists (0.3ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 19]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 18]]
+  [1m[35mComment Exists (0.4ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 201ms (Views: 170.8ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 19:29:55 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1  [["post_id", 19]]
+  [1m[36mComment Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1[0m  [["post_id", 19]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1  [["post_id", 18]]
+  [1m[36mComment Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1[0m  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 69ms (Views: 66.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 19:29:55 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 19:29:55 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 19:29:55 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 19:29:55 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 19:29:55 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 19:29:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 19:29:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 19:29:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 19:29:55 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 19:29:55 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 19:29:56 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 19:29:56 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 19:29:56 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 19:29:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 19:29:56 +0000
+
+
+Started GET "/users/13" for 127.0.0.1 at 2015-01-05 19:30:00 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"  WHERE "posts"."user_id" = 13[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = 13
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 63ms (Views: 59.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/13" for 127.0.0.1 at 2015-01-05 19:30:06 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"  WHERE "posts"."user_id" = 13[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = 13
+  Rendered users/show.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 65ms (Views: 63.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/13" for 127.0.0.1 at 2015-01-05 19:30:08 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"  WHERE "posts"."user_id" = 13[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = 13
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 63ms (Views: 60.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/19/comments/new" for 127.0.0.1 at 2015-01-05 19:30:22 +0000
+Processing by CommentsController#new as HTML
+  Parameters: {"post_id"=>"19"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 19]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered comments/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts/19/comments" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VpptOQj0Q1JoAqZGp4i/ltNwXvq+Ed/MBchDSC0krxg=", "comment"=>{"user_id"=>"13", "name"=>"fsdf", "thoughts"=>"fsdfsdfs"}, "commit"=>"Send", "post_id"=>"19"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 19]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("created_at", "name", "post_id", "thoughts", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2015-01-05 19:30:25.594017"], ["name", "fsdf"], ["post_id", 19], ["thoughts", "fsdfsdfs"], ["updated_at", "2015-01-05 19:30:25.594017"], ["user_id", 13]]
+  [1m[36m (5.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 19]]
+  [1m[35mComment Exists (0.4ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 19]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 19]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1  [["post_id", 18]]
+  [1m[36mComment Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1[0m  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 94ms (Views: 89.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:25 +0000
+
+
+Started DELETE "/comments/4" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VpptOQj0Q1JoAqZGp4i/ltNwXvq+Ed/MBchDSC0krxg=", "id"=>"4"}
+  [1m[35mComment Load (0.2ms)[0m  SELECT  "comments".* FROM "comments"  WHERE "comments"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "comments" WHERE "comments"."id" = $1  [["id", 4]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 13  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 19]]
+  [1m[35mComment Exists (0.2ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 19]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 18]]
+  [1m[35mComment Exists (0.3ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 82ms (Views: 78.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-05 19:30:33 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (12.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1  [["post_id", 19]]
+  [1m[36mComment Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1[0m  [["post_id", 19]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1  [["post_id", 18]]
+  [1m[36mComment Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1[0m  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (81.3ms)
+Completed 200 OK in 239ms (Views: 196.8ms | ActiveRecord: 25.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:30 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-06 19:44:36 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 90ms (Views: 86.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 19:44:55 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aruSGiPv4y6xTkVtmcFnItY0KIpPN9/a+Nqnb5GC1MQ=", "user"=>{"first_name"=>"mishal", "last_name"=>"mishal", "profile_name"=>"mishalislam", "email"=>"m@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: first_name, last_name, profile_name
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'm@m.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2015-01-06 19:44:55.478134"], ["email", "m@m.com"], ["encrypted_password", "$2a$10$PkIjlopYgg/Mi5dNAKkaieiZCBUrfE18oxebT.aCgHyi/yJvpiA.K"], ["updated_at", "2015-01-06 19:44:55.478134"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 14[0m  [["current_sign_in_at", "2015-01-06 19:44:55.480304"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2015-01-06 19:44:55.480304"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-01-06 19:44:55.481091"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 78ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:44:55 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 14  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1  [["post_id", 19]]
+  [1m[36mComment Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1[0m  [["post_id", 19]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1  [["post_id", 18]]
+  [1m[36mComment Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1[0m  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 85ms (Views: 77.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:44:55 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:44:55 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:44:55 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:44:55 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:55 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:44:55 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:55 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:55 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:55 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:44:55 +0000
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = $1[0m  [["user_id", 13]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 19]]
+[AWS S3 200 4.275902 0 retries] head_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/019/original/burger.png")  
+
+[AWS S3 200 0.174511 0 retries] head_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/019/medium/burger.png")  
+
+[AWS S3 200 0.174838 0 retries] head_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/019/thumb/burger.png")  
+
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 19]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 18]]
+[AWS S3 200 0.172226 0 retries] head_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/018/original/burger.png")  
+
+[AWS S3 200 0.180869 0 retries] head_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/018/medium/burger.png")  
+
+[AWS S3 200 0.176665 0 retries] head_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/018/thumb/burger.png")  
+
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 18]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."user_id" = $1  [["user_id", 13]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  [1m[35m (1.0ms)[0m  COMMIT
+[paperclip] deleting /posts/images/000/000/019/original/burger.png
+[AWS S3 204 0.176456 0 retries] delete_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/019/original/burger.png")  
+
+[paperclip] deleting /posts/images/000/000/019/medium/burger.png
+[AWS S3 204 0.174543 0 retries] delete_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/019/medium/burger.png")  
+
+[paperclip] deleting /posts/images/000/000/019/thumb/burger.png
+[AWS S3 204 0.589104 0 retries] delete_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/019/thumb/burger.png")  
+
+[paperclip] deleting /posts/images/000/000/018/original/burger.png
+[AWS S3 204 0.175701 0 retries] delete_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/018/original/burger.png")  
+
+[paperclip] deleting /posts/images/000/000/018/medium/burger.png
+[AWS S3 204 0.63442 0 retries] delete_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/018/medium/burger.png")  
+
+[paperclip] deleting /posts/images/000/000/018/thumb/burger.png
+[AWS S3 204 0.17816 0 retries] delete_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/018/thumb/burger.png")  
+
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = $1[0m  [["user_id", 14]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."user_id" = $1  [["user_id", 14]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 14  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 129ms (Views: 104.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:17 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-06 19:48:19 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 95ms (Views: 93.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aruSGiPv4y6xTkVtmcFnItY0KIpPN9/a+Nqnb5GC1MQ=", "user"=>{"first_name"=>"mishal", "last_name"=>"islam", "profile_name"=>"mishalislam", "email"=>"m@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: first_name, last_name, profile_name
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'm@m.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2015-01-06 19:48:33.387707"], ["email", "m@m.com"], ["encrypted_password", "$2a$10$BQFt3tQLfVkb3GfFpzbHmedH46uOnG/igPFh8X.1DEhXU1k6mo9Pu"], ["updated_at", "2015-01-06 19:48:33.387707"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 15[0m  [["current_sign_in_at", "2015-01-06 19:48:33.391701"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2015-01-06 19:48:33.391701"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-01-06 19:48:33.392590"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 83ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 15  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:48:33 +0000
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = $1  [["user_id", 15]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."user_id" = $1[0m  [["user_id", 15]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 15]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 15  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 125ms (Views: 102.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:37 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-06 19:49:38 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 97ms (Views: 95.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aruSGiPv4y6xTkVtmcFnItY0KIpPN9/a+Nqnb5GC1MQ=", "user"=>{"first_name"=>"mishal", "last_name"=>"islam", "profile_name"=>"mishalislam", "email"=>"m@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: first_name, last_name, profile_name
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'm@m.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2015-01-06 19:49:57.237940"], ["email", "m@m.com"], ["encrypted_password", "$2a$10$5HhaZp2a0/4n9P.84YfkieIvRH2N9XjQ.Stcu46EJy1d4X2btu9wC"], ["updated_at", "2015-01-06 19:49:57.237940"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 16[0m  [["current_sign_in_at", "2015-01-06 19:49:57.241815"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2015-01-06 19:49:57.241815"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-01-06 19:49:57.242605"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 82ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 16  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 58.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:49:57 +0000
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = $1  [["user_id", 16]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."user_id" = $1[0m  [["user_id", 16]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 16]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 16  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 127ms (Views: 104.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:36 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:37 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-06 19:51:37 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 89ms (Views: 86.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aruSGiPv4y6xTkVtmcFnItY0KIpPN9/a+Nqnb5GC1MQ=", "user"=>{"first_name"=>"mishal", "last_name"=>"islam", "profile_name"=>"mishalislam", "email"=>"m@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: first_name, last_name, profile_name
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'm@m.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2015-01-06 19:51:53.750201"], ["email", "m@m.com"], ["encrypted_password", "$2a$10$Urtmes16dofKhpCi/t8F.OWG8sgN5xaovSeQR1WpiAsOR0KBPh7Ka"], ["updated_at", "2015-01-06 19:51:53.750201"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 17[0m  [["current_sign_in_at", "2015-01-06 19:51:53.754453"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2015-01-06 19:51:53.754453"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-01-06 19:51:53.755280"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 85ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 17  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 56ms (Views: 54.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:51:53 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 17  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 135ms (Views: 105.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:53:57 +0000
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-01-06 19:53:59 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aruSGiPv4y6xTkVtmcFnItY0KIpPN9/a+Nqnb5GC1MQ="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 17  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:53:59 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 62ms (Views: 58.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:00 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-06 19:54:01 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 78ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H/BxgwUwcSAaEDaIQvzEAhdaJjWKV/DhrHPmtcRhnFs=", "user"=>{"first_name"=>"1", "last_name"=>"1", "profile_name"=>"1", "email"=>"1@1.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: first_name, last_name, profile_name
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = '1@1.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2015-01-06 19:54:13.803958"], ["email", "1@1.com"], ["encrypted_password", "$2a$10$dur/dSj9Bz0twVwOnCnZO.rYC8LJ/NqqSQeo2Q.JfP2cxnVtCR6ei"], ["updated_at", "2015-01-06 19:54:13.803958"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 18[0m  [["current_sign_in_at", "2015-01-06 19:54:13.808082"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2015-01-06 19:54:13.808082"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-01-06 19:54:13.808945"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 82ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 18  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 60ms (Views: 57.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:54:13 +0000
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = $1  [["user_id", 17]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."user_id" = $1[0m  [["user_id", 17]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 17]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = $1  [["user_id", 18]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."user_id" = $1[0m  [["user_id", 18]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 18]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 18  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 132ms (Views: 106.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:08 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-06 19:55:09 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 90ms (Views: 86.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H/BxgwUwcSAaEDaIQvzEAhdaJjWKV/DhrHPmtcRhnFs=", "user"=>{"first_name"=>"mishal", "last_name"=>"islam", "profile_name"=>"mishalislam", "email"=>"1@1.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: email, password, password_confirmation
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 74ms (Views: 68.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:23 +0000
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 19:55:49 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H/BxgwUwcSAaEDaIQvzEAhdaJjWKV/DhrHPmtcRhnFs=", "user"=>{"first_name"=>"1", "last_name"=>"1", "profile_name"=>"1", "email"=>"m@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: email, password, password_confirmation
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 72ms (Views: 64.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:50 +0000
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 19:55:54 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H/BxgwUwcSAaEDaIQvzEAhdaJjWKV/DhrHPmtcRhnFs=", "user"=>{"first_name"=>"1", "last_name"=>"1", "profile_name"=>"1", "email"=>"m@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: email, password, password_confirmation
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 67ms (Views: 62.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:55:55 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 126ms (Views: 107.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:06 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-06 19:56:08 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 97ms (Views: 93.0ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H/BxgwUwcSAaEDaIQvzEAhdaJjWKV/DhrHPmtcRhnFs=", "user"=>{"first_name"=>"mishal", "last_name"=>"islam", "profile_name"=>"mishalislam", "email"=>"m@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: email, password, password_confirmation
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 77ms (Views: 69.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:56:24 +0000
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H/BxgwUwcSAaEDaIQvzEAhdaJjWKV/DhrHPmtcRhnFs=", "user"=>{"first_name"=>"mishal", "last_name"=>"islam", "profile_name"=>"mishalislam", "email"=>"m@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'm@m.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2015-01-06 19:57:12.454039"], ["email", "m@m.com"], ["encrypted_password", "$2a$10$JW9EwIlKukgTb/kLBVyIBeL7Oqw9tFHU/RXnlfA5XVUu6AqNpNfQi"], ["updated_at", "2015-01-06 19:57:12.454039"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 19[0m  [["current_sign_in_at", "2015-01-06 19:57:12.465757"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2015-01-06 19:57:12.465757"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-01-06 19:57:12.466729"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 114ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 19  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 147ms (Views: 132.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:12 +0000
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = $1  [["user_id", 19]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."user_id" = $1[0m  [["user_id", 19]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 19]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 19  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 130ms (Views: 105.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:57:46 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-06 19:57:48 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 94ms (Views: 91.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H/BxgwUwcSAaEDaIQvzEAhdaJjWKV/DhrHPmtcRhnFs=", "user"=>{"first_name"=>"mishal", "last_name"=>"islam", "profile_name"=>"mishalislam", "email"=>"m@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'm@m.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2015-01-06 19:58:02.546768"], ["email", "m@m.com"], ["encrypted_password", "$2a$10$Xsqj6.5DQQJCQONbO4M9cOvsOSwtFtTLndDc7SoJBGcYrb02NvF6K"], ["updated_at", "2015-01-06 19:58:02.546768"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 20[0m  [["current_sign_in_at", "2015-01-06 19:58:02.550503"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2015-01-06 19:58:02.550503"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-01-06 19:58:02.551404"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 83ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 20  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 19:58:02 +0000
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = $1  [["user_id", 20]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."user_id" = $1[0m  [["user_id", 20]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 20]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 20  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 127ms (Views: 102.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:02 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-06 20:01:03 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 89ms (Views: 86.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H/BxgwUwcSAaEDaIQvzEAhdaJjWKV/DhrHPmtcRhnFs=", "user"=>{"first_name"=>"1", "last_name"=>"1", "profile_name"=>"1", "email"=>"1@1.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = '1@1.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "first_name", "last_name", "profile_name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2015-01-06 20:01:17.568417"], ["email", "1@1.com"], ["encrypted_password", "$2a$10$Sx9cr3rNTR/KrfJuj2ByW.ewd6iTgDcto8sdCM6yD4qrl3c2UotOG"], ["first_name", "1"], ["last_name", "1"], ["profile_name", "1"], ["updated_at", "2015-01-06 20:01:17.568417"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 21[0m  [["current_sign_in_at", "2015-01-06 20:01:17.572250"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2015-01-06 20:01:17.572250"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-01-06 20:01:17.573108"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 84ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 21  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:01:17 +0000
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 21  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 132ms (Views: 102.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:33:52 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-06 20:33:54 +0000
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 21  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 21]]
+  Rendered posts/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 85ms (Views: 80.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-06 20:34:02 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H/BxgwUwcSAaEDaIQvzEAhdaJjWKV/DhrHPmtcRhnFs=", "post"=>{"name"=>"1", "title"=>"fhjdkd", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fcf20a00928 @tempfile=#<Tempfile:/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/RackMultipart20150106-16984-1fznu5l>, @original_filename="burger.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"burger.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 21  ORDER BY "users"."id" ASC LIMIT 1
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1rsyqz2.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1yfqbm0.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1yfqbm0.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1yfqbm0.png[0]' -auto-orient -resize "300x300>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1yfqbm020150106-16984-u1b577'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1yfqbm020150106-16984-u1b577'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1yfqbm0.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1yfqbm0.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1yfqbm0.png[0]' -auto-orient -resize "100x100>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1yfqbm020150106-16984-i0v1vj'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1yfqbm020150106-16984-i0v1vj'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-103e2sy.png'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "name", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", "2015-01-06 20:34:03.004147"], ["image_content_type", "image/png"], ["image_file_name", "burger.png"], ["image_file_size", 1534539], ["image_updated_at", "2015-01-06 20:34:02.645235"], ["name", "1"], ["title", "fhjdkd"], ["updated_at", "2015-01-06 20:34:03.004147"]]
+[paperclip] saving /posts/images/000/000/020/original/burger.png
+[AWS S3 200 13.475037 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>1534539,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: burger.png,:key=>"posts/images/000/000/020/original/burger.png")  
+
+[paperclip] saving /posts/images/000/000/020/medium/burger.png
+[AWS S3 200 3.079641 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>146722,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1yfqbm020150106-16984-u1b577,:key=>"posts/images/000/000/020/medium/burger.png")  
+
+[paperclip] saving /posts/images/000/000/020/thumb/burger.png
+[AWS S3 200 0.357889 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>22780,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1yfqbm020150106-16984-i0v1vj,:key=>"posts/images/000/000/020/thumb/burger.png")  
+
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "posts" SET "updated_at" = $1, "user_id" = $2 WHERE "posts"."id" = 20[0m  [["updated_at", "2015-01-06 20:34:20.107216"], ["user_id", 21]]
+  [1m[35m (6.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 17478ms (ActiveRecord: 13.9ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-06 20:34:20 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H/BxgwUwcSAaEDaIQvzEAhdaJjWKV/DhrHPmtcRhnFs=", "post"=>{"name"=>"1", "title"=>"fhjdkd", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fcf1ff64050 @tempfile=#<Tempfile:/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/RackMultipart20150106-16984-1au3n8a>, @original_filename="burger.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"burger.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 21  ORDER BY "users"."id" ASC LIMIT 1[0m
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-eb7le6.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-x4pqj2.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-x4pqj2.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-x4pqj2.png[0]' -auto-orient -resize "300x300>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-x4pqj220150106-16984-1jn76vq'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-x4pqj220150106-16984-1jn76vq'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-x4pqj2.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-x4pqj2.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-x4pqj2.png[0]' -auto-orient -resize "100x100>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-x4pqj220150106-16984-16cnw6a'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-x4pqj220150106-16984-16cnw6a'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-16984-1gtqknw.png'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "name", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2015-01-06 20:34:20.476243"], ["image_content_type", "image/png"], ["image_file_name", "burger.png"], ["image_file_size", 1534539], ["image_updated_at", "2015-01-06 20:34:20.134149"], ["name", "1"], ["title", "fhjdkd"], ["updated_at", "2015-01-06 20:34:20.476243"]]
+[paperclip] saving /posts/images/000/000/021/original/burger.png
+[AWS S3 200 17.527868 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>1534539,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: burger.png,:key=>"posts/images/000/000/021/original/burger.png")  
+
+[paperclip] saving /posts/images/000/000/021/medium/burger.png
+[AWS S3 200 2.557163 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>146722,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 6e69685d22c94ffd42ccd7e70e246bd920150106-16984-x4pqj220150106-16984-1jn76vq,:key=>"posts/images/000/000/021/medium/burger.png")  
+
+[paperclip] saving /posts/images/000/000/021/thumb/burger.png
+[AWS S3 200 0.343967 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>22780,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 6e69685d22c94ffd42ccd7e70e246bd920150106-16984-x4pqj220150106-16984-16cnw6a,:key=>"posts/images/000/000/021/thumb/burger.png")  
+
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "posts" SET "updated_at" = $1, "user_id" = $2 WHERE "posts"."id" = 21  [["updated_at", "2015-01-06 20:34:40.916073"], ["user_id", 21]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 20791ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 20:34:40 +0000
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 21  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 21]]
+  [1m[35mComment Exists (0.5ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 21]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 20]]
+  [1m[35mComment Exists (0.2ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 20]]
+  Rendered posts/index.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 130ms (Views: 124.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:34:41 +0000
+
+
+Started GET "/users/21" for 127.0.0.1 at 2015-01-06 20:34:55 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 21]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"  WHERE "posts"."user_id" = 21
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = 21[0m
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 21  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 72ms (Views: 69.6ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/posts/21" for 127.0.0.1 at 2015-01-06 20:35:02 +0000
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"H/BxgwUwcSAaEDaIQvzEAhdaJjWKV/DhrHPmtcRhnFs=", "id"=>"21"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 21  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 21]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 21]]
+[AWS S3 200 0.879664 0 retries] head_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/021/original/burger.png")  
+
+[AWS S3 200 0.17503 0 retries] head_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/021/medium/burger.png")  
+
+[AWS S3 200 0.174079 0 retries] head_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/021/thumb/burger.png")  
+
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 21]]
+  [1m[35m (1.0ms)[0m  COMMIT
+[paperclip] deleting /posts/images/000/000/021/original/burger.png
+[AWS S3 204 0.17802 0 retries] delete_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/021/original/burger.png")  
+
+[paperclip] deleting /posts/images/000/000/021/medium/burger.png
+[AWS S3 204 0.177111 0 retries] delete_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/021/medium/burger.png")  
+
+[paperclip] deleting /posts/images/000/000/021/thumb/burger.png
+[AWS S3 204 0.177274 0 retries] delete_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/021/thumb/burger.png")  
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1775ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 21  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1  [["post_id", 20]]
+  [1m[36mComment Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1[0m  [["post_id", 20]]
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 71ms (Views: 68.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:04 +0000
+
+
+Started DELETE "/posts/20" for 127.0.0.1 at 2015-01-06 20:35:07 +0000
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"H/BxgwUwcSAaEDaIQvzEAhdaJjWKV/DhrHPmtcRhnFs=", "id"=>"20"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 21  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 20]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 20]]
+[AWS S3 200 0.872645 0 retries] head_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/020/original/burger.png")  
+
+[AWS S3 200 0.177979 0 retries] head_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/020/medium/burger.png")  
+
+[AWS S3 200 0.179851 0 retries] head_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/020/thumb/burger.png")  
+
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = $1  [["id", 20]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+[paperclip] deleting /posts/images/000/000/020/original/burger.png
+[AWS S3 204 0.19079 0 retries] delete_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/020/original/burger.png")  
+
+[paperclip] deleting /posts/images/000/000/020/medium/burger.png
+[AWS S3 204 0.186055 0 retries] delete_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/020/medium/burger.png")  
+
+[paperclip] deleting /posts/images/000/000/020/thumb/burger.png
+[AWS S3 204 0.189882 0 retries] delete_object(:bucket_name=>"instagrammishal",:key=>"posts/images/000/000/020/thumb/burger.png")  
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1812ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 21  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:09 +0000
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"H/BxgwUwcSAaEDaIQvzEAhdaJjWKV/DhrHPmtcRhnFs="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 21  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 59ms (Views: 55.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:10 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 163ms (Views: 135.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:16 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-06 20:35:17 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 99ms (Views: 95.1ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pUsAYgORm7EEfYGqZl2UQLSa2oQ4ljU/RXWkHcFhy2E=", "user"=>{"first_name"=>"mishal", "last_name"=>"islam", "profile_name"=>"mishalislam", "email"=>"m@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'm@m.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "first_name", "last_name", "profile_name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2015-01-06 20:35:33.164360"], ["email", "m@m.com"], ["encrypted_password", "$2a$10$N8xBZkFCzRi2bTiRnCLPteadZI1WyNs/JFB2qg3PVx6TS3W2UiKI2"], ["first_name", "mishal"], ["last_name", "islam"], ["profile_name", "mishalislam"], ["updated_at", "2015-01-06 20:35:33.164360"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 22  [["current_sign_in_at", "2015-01-06 20:35:33.168458"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2015-01-06 20:35:33.168458"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-01-06 20:35:33.169385"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 85ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 22  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 58.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:33 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-06 20:35:34 +0000
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 22  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  Rendered posts/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 65ms (Views: 59.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pUsAYgORm7EEfYGqZl2UQLSa2oQ4ljU/RXWkHcFhy2E="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 22  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:35:50 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-06 20:35:51 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 58ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Aa3oZS5W1mxTaItvi+QM8vDLLZ9ZeMwyNzHLeiuWALU=", "user"=>{"first_name"=>"mishal", "last_name"=>"islam", "profile_name"=>"mishalislam", "email"=>"m@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'm@m.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 134ms (Views: 64.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:04 +0000
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Aa3oZS5W1mxTaItvi+QM8vDLLZ9ZeMwyNzHLeiuWALU=", "user"=>{"first_name"=>"mishal", "last_name"=>"islam", "profile_name"=>"mishalislam", "email"=>"1@1.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = '1@1.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 133ms (Views: 62.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:14 +0000
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Aa3oZS5W1mxTaItvi+QM8vDLLZ9ZeMwyNzHLeiuWALU=", "user"=>{"first_name"=>"mishal", "last_name"=>"islam", "profile_name"=>"mishalislam", "email"=>"mishal@mishal.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'mishal@mishal.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "first_name", "last_name", "profile_name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2015-01-06 20:36:27.170987"], ["email", "mishal@mishal.com"], ["encrypted_password", "$2a$10$rF1gQgVhH55m9IMbfbF78eA8XJss35ZKO4V.DHXHGNxdLc25ZjJgu"], ["first_name", "mishal"], ["last_name", "islam"], ["profile_name", "mishalislam"], ["updated_at", "2015-01-06 20:36:27.170987"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 23[0m  [["current_sign_in_at", "2015-01-06 20:36:27.172783"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2015-01-06 20:36:27.172783"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-01-06 20:36:27.173156"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 70ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 23  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:27 +0000
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-01-06 20:36:29 +0000
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 23  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 23]]
+  Rendered posts/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 64ms (Views: 61.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-01-06 20:36:35 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Aa3oZS5W1mxTaItvi+QM8vDLLZ9ZeMwyNzHLeiuWALU=", "post"=>{"name"=>"mishal", "title"=>"gfndmg", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fa07b3b8698 @tempfile=#<Tempfile:/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/RackMultipart20150106-17031-10flsbh>, @original_filename="burger.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"burger.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 23  ORDER BY "users"."id" ASC LIMIT 1[0m
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-17031-64pg14.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-17031-17oow8i.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-17031-17oow8i.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-17031-17oow8i.png[0]' -auto-orient -resize "300x300>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-17031-17oow8i20150106-17031-qiofx8'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-17031-17oow8i20150106-17031-qiofx8'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-17031-17oow8i.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-17031-17oow8i.png[0]'
+Command :: convert '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-17031-17oow8i.png[0]' -auto-orient -resize "100x100>" '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-17031-17oow8i20150106-17031-1till05'
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-17031-17oow8i20150106-17031-1till05'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/_p/05md148d5m1_ksg3pq1ffrl00000gn/T/6e69685d22c94ffd42ccd7e70e246bd920150106-17031-1t0ax26.png'
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "name", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2015-01-06 20:36:35.715589"], ["image_content_type", "image/png"], ["image_file_name", "burger.png"], ["image_file_size", 1534539], ["image_updated_at", "2015-01-06 20:36:35.357656"], ["name", "mishal"], ["title", "gfndmg"], ["updated_at", "2015-01-06 20:36:35.715589"]]
+[paperclip] saving /posts/images/000/000/022/original/burger.png
+[AWS S3 200 15.583202 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>1534539,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: burger.png,:key=>"posts/images/000/000/022/original/burger.png")  
+
+[paperclip] saving /posts/images/000/000/022/medium/burger.png
+[AWS S3 200 1.778542 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>146722,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 6e69685d22c94ffd42ccd7e70e246bd920150106-17031-17oow8i20150106-17031-qiofx8,:key=>"posts/images/000/000/022/medium/burger.png")  
+
+[paperclip] saving /posts/images/000/000/022/thumb/burger.png
+[AWS S3 200 0.192596 0 retries] put_object(:acl=>:public_read,:bucket_name=>"instagrammishal",:content_length=>22780,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 6e69685d22c94ffd42ccd7e70e246bd920150106-17031-17oow8i20150106-17031-1till05,:key=>"posts/images/000/000/022/thumb/burger.png")  
+
+  [1m[35m (6.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "posts" SET "updated_at" = $1, "user_id" = $2 WHERE "posts"."id" = 22  [["updated_at", "2015-01-06 20:36:53.440806"], ["user_id", 23]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 18097ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 23  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."post_id" = $1[0m  [["post_id", 22]]
+  [1m[35mComment Exists (0.3ms)[0m  SELECT  1 AS one FROM "comments"  WHERE "comments"."post_id" = $1 LIMIT 1  [["post_id", 22]]
+  Rendered posts/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 87ms (Views: 81.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 20:36:53 +0000
+
+
+Started GET "/users/23" for 127.0.0.1 at 2015-01-06 20:36:55 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"  WHERE "posts"."user_id" = 23
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = 23[0m
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 23  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 1.0ms)

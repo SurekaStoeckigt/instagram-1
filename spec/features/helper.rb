@@ -13,21 +13,21 @@ end
 def create_post(title)
   visit '/'
   click_link 'Add Photo'
-  fill_in 'Name', with:'Mishal Islam'
   fill_in 'Title', with: title
   attach_file "Image", File.join(Rails.root, '/spec/features/burger.png')
   click_button "Create Post"
 end
 
-def add_comment(thoughts, name)
+def add_comment(thoughts)
   click_link 'Comment'
   fill_in 'Thoughts', with: thoughts
-  fill_in 'Name', with: name
   click_button 'Send'
 end
 
-def user_leaves_comment
-  sign_up('mishal','test@test.com')
+def different_user_leaves_comment
+  sign_up('Mishal','test@test.com')
   create_post('First Picture!')
-  add_comment('test', 'MISHAL')
+  click_link 'Sign out'
+  sign_up('MISHAL', '1@1.com')
+  add_comment('HELLO')
 end

@@ -6,16 +6,16 @@ feature 'Comments' do
   context 'a user is signed in' do
 
     before do
-      user_leaves_comment
+      different_user_leaves_comment
     end
 
     scenario "a user can add and view a comment on a post" do
-      expect(page).to have_content 'test'
+      expect(page).to have_content 'HELLO'
     end
 
     scenario "a user can delete a comment on a post" do
       click_link 'X'
-      expect(page).not_to have_content 'test'
+      expect(page).not_to have_content 'HELLO'
       expect(page).to have_content 'Comment deleted successfully'
     end
 
@@ -29,7 +29,7 @@ feature 'Comments' do
   context 'another user creates a comment' do
 
     before do
-      user_leaves_comment
+      different_user_leaves_comment
       click_link 'Sign out'
     end
 
