@@ -30,7 +30,12 @@ gem 'database_cleaner'
 
 gem 'aws-sdk'
 
+gem 'geocoder'
+
+gem 'gmaps4rails'
+
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'launchy'
 end
